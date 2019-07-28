@@ -1,0 +1,146 @@
+body {
+  background-color: black;
+}
+#update
+{
+	height	:20px;
+	width	:120px;
+}
+#wrapper
+{
+	width: auto;
+	border: 1px solid black;
+	overflow: hidden;
+}
+#wrapper2
+{
+	width: auto;
+	border: 1px solid black;
+	overflow: hidden;
+}
+#div-cam
+{
+    width 	:480px;
+	height	:270px;
+    overflow : hidden;
+    position : relative;
+	float:left;
+}
+#div-faxa
+{
+    width    : 1024px;
+    height   : 270px;
+    overflow : hidden;
+    position : relative;
+	float:left;
+}
+#div-grænlendingur
+{
+    width    : 430px;
+    height   : 233px;
+    overflow : hidden;
+    position : relative;
+}
+#iframe-cam
+{
+	position : absolute;
+	width 	:480px;
+	height	:270px;
+}
+#iframe-marinetraffic
+{
+	position : absolute;
+	width 	:800px;
+	height	:600px;
+}
+#iframe-faxa
+{
+    position : absolute;
+    top      : -702px;
+    left     : -156px;
+    width    : 1340px;
+    height   : 1200px;
+}
+#iframe-grænlendingur
+{
+    position : absolute;
+    top      : -500px;
+    left     : -400px;
+    width    : 1340px;
+    height   : 1200px;
+}
+#div-skipa1
+{
+    width    : 1280px;
+    height   : 164px;
+    overflow : hidden;
+    position : relative;
+}
+#iframe-skipa1
+{
+    position : absolute;
+    top      : -980px;
+    left     : -40px;
+    width    : 1362px;
+    height   : 6057px;
+}
+#div-skipa2
+{
+    width    : 1280px;
+    height   : 164px;
+    overflow : hidden;
+    position : relative;
+}
+#iframe-skipa2
+{
+    position : absolute;
+    top      : -1760px;
+    left     : -40px;
+    width    : 1362px;
+    height   : 6057px;
+}
+#div-skipa3
+{
+    width    : 1280px;
+    height   : 164px;
+    overflow : hidden;
+    position : relative;
+}
+#iframe-skipa3
+{
+    position : absolute;
+    top      : -2580px;
+    left     : -40px;
+    width    : 1362px;
+    height   : 6057px;
+}
+#div-skipa4
+{
+    width    : 1280px;
+    height   : 164px;
+    overflow : hidden;
+    position : relative;
+}
+#iframe-skipa4
+{
+    position : absolute;
+    top      : -1760px;
+    left     : -40px;
+    width    : 1362px;
+    height   : 6057px;
+}
+#div-skipa5
+{
+    width    : 1280px;
+    height   : 164px;
+    overflow : hidden;
+    position : relative;
+}
+#iframe-skipa5
+{
+    position : absolute;
+    top      : -1760px;
+    left     : -40px;
+    width    : 1362px;
+    height   : 6057px;
+}
