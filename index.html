@@ -1,76 +1,54 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="shortcut icon" type="image/png" href="C:\Users\sant\Documents\sant\w\icons8-cargo-ship-50.png"/>
+		<title>SKIP</title>
 		<link rel="stylesheet" type="text/css" href="mystyle.css">
-		<!-- <script type = "text/javascript" src = "filename.js" ></script> -->
-		<script type = "text/javascript">
-         <!--
-            function sayHello() {
-               alert("Hello World")
-            }
-         //-->
-      </script>  
+		<script>
+			function openCity(evt, cityName) {
+				// Declare all variables
+				var i, tabcontent, tablinks;
+
+				// Get all elements with class="tabcontent" and hide them
+				tabcontent = document.getElementsByClassName("tabcontent");
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+				}
+
+				// Get all elements with class="tablinks" and remove the class "active"
+				tablinks = document.getElementsByClassName("tablinks");
+				for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(" active", "");
+				}
+
+				// Show the current tab, and add an "active" class to the button that opened the tab
+				document.getElementById(cityName).style.display = "block";
+				evt.currentTarget.className += " active";
+			}
+		</script>
 	</head>
 	<body>
-	<button id="update-faxa" onclick="var ifr=document.getElementsByName('faxa')[0]; ifr.src=ifr.src;">Uppfæra Faxaflóahafnir</button>
-	<!--<input type="button" onclick="sayHello()" value="Say Hello" />-->
-		<div id="wrapper">
-			<div id="div-cam">
-				<iframe src="https://g0.ipcamlive.com/player/player.php?alias=korngardur&autoplay=true" id="iframe-cam" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-			</div>
-			<div id="div-faxa">
-				<iframe name="faxa" src="https://www.faxafloahafnir.is" id="iframe-faxa" scrolling="no"></iframe>
-			</div>
-			<!--
-			<div id="div-grænlendingur">
-				<iframe src="http://www.royalarcticline.com/schedules/ports/reykjavik" id="iframe-grænlendingur" scrolling="no"></iframe>
-			</div>
-			-->
+		<div class="tab">
+			<button class="tablinks" onclick="openCity(event, 'FFH')">Faxaflóahafnir</button>
+			<button class="tablinks" onclick="openCity(event, 'MT')">MarineTraffic</button>
+			<button class="tablinks" onclick="openCity(event, 'KB')">Kleppsbakki</button>
+			<button class="tablinks" onclick="openCity(event, 'SB')">Skarfabakki</button>
+			<button class="tablinks" onclick="openCity(event, 'GT')">Grundatangi</button>
 		</div>
-		<div id="wrapper">
-			<div id="div-cam">
-				<iframe src="https://g0.ipcamlive.com/player/player.php?alias=grundartangi&autoplay=true" id="iframe-cam" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-			</div>
-			<div>
-				<iframe name="marinetraffic" src="https://www.marinetraffic.com/en/ais/home/centerx:-21.853/centery:64.151/zoom:16" id="iframe-marinetraffic" scrolling="no"></iframe>
-			</div>
+		<div id="FFH" class="tabcontent">
+			<iframe class="faxa" src="https://www.faxafloahafnir.is" scrolling="no"></iframe>
 		</div>
-		<!--
-		<div id="wrapper2">
-			<b style="color:white;">Bláa Leiðin</b>
-			<div id="div-skipa1">
-				<iframe name="skipa1" src="https://www.eimskip.is/um-eimskip/siglingaaaetlun/" id="iframe-skipa1" scrolling="no"></iframe>
-			</div>
-			<b style="color:white;">Gula Leiðin</b>
-			<div id="div-skipa2">
-				<iframe name="skipa2" src="https://www.eimskip.is/um-eimskip/siglingaaaetlun/" id="iframe-skipa2" scrolling="no"></iframe>
-			</div>
-			<b style="color:white;">Græna Leiðin</b>
-			<div id="div-skipa3">
-				<iframe name="skipa3" src="https://www.eimskip.is/um-eimskip/siglingaaaetlun/" id="iframe-skipa3" scrolling="no"></iframe>
-			</div>
-			<b style="color:white;">Gráa Leiðin</b>
-			<div id="div-skipa4">
-				<iframe name="skipa4" src="https://www.eimskip.is/um-eimskip/siglingaaaetlun/" id="iframe-skipa4" scrolling="no"></iframe>
-			</div>
-			<b style="color:white;">Rauða Leiðin</b>
-			<div id="div-skipa5">
-				<iframe name="skipa5" src="https://www.eimskip.is/um-eimskip/siglingaaaetlun/" id="iframe-skipa5" scrolling="no"></iframe>
-			</div>
+		<div id="MT" class="tabcontent">
+			<iframe class="marinetraffic" src="https://www.marinetraffic.com/en/ais/home/centerx:-21.853/centery:64.151/zoom:16" scrolling="no"></iframe>
 		</div>
-		-->
-		<script type = "text/javascript">
-         <!--
-            document.write("Hello World")
-         //-->
-      </script>
+		<div id="KB" class="tabcontent">
+			<iframe class="cam" src="https://g0.ipcamlive.com/player/player.php?alias=korngardur&autoplay=true" allowfullscreen="allowfullscreen"></iframe>
+		</div>
+		<div id="SB" class="tabcontent">
+			<iframe class="cam" src="https://g0.ipcamlive.com/player/player.php?alias=skarfabakki" allowfullscreen="allowfullscreen"></iframe>
+		</div>
+		<div id="GT" class="tabcontent">
+			<iframe class="cam" src="https://g0.ipcamlive.com/player/player.php?alias=grundartangi" allowfullscreen="allowfullscreen"></iframe>
+		</div>
 	</body>
 </html>
-<!--
-https://www.eimskip.is/um-eimskip/siglingaaaetlun/
-
-<a href="http://www.mit.edu/" target="myDemoFrame">» Go to MIT.edu</a>
-<a href="http://www.weather.gov/" target="myDemoFrame">» Go to Weather.gov</a> 
-<br />
-<iframe name="myDemoFrame" src="http://www.weather.gov/" width="800" height="300"></iframe>
--->
