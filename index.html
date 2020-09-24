@@ -1,53 +1,28 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>SKIP</title>
-		<link rel="stylesheet" type="text/css" href="mystyle.css">
-		<script>
-			function openCity(evt, cityName) {
-				// Declare all variables
-				var i, tabcontent, tablinks;
-
-				// Get all elements with class="tabcontent" and hide them
-				tabcontent = document.getElementsByClassName("tabcontent");
-				for (i = 0; i < tabcontent.length; i++) {
-					tabcontent[i].style.display = "none";
-				}
-
-				// Get all elements with class="tablinks" and remove the class "active"
-				tablinks = document.getElementsByClassName("tablinks");
-				for (i = 0; i < tablinks.length; i++) {
-					tablinks[i].className = tablinks[i].className.replace(" active", "");
-				}
-
-				// Show the current tab, and add an "active" class to the button that opened the tab
-				document.getElementById(cityName).style.display = "block";
-				evt.currentTarget.className += " active";
-			}
-		</script>
+		<title>📺</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <script src="reload.js"></script>
 	</head>
 	<body>
-		<div class="tab">
-			<button class="tablinks" onclick="openCity(event, 'FFH')">Faxaflóahafnir</button>
-			<button class="tablinks" onclick="openCity(event, 'MT')">MarineTraffic</button>
-			<button class="tablinks" onclick="openCity(event, 'KB')">Kleppsbakki</button>
-			<button class="tablinks" onclick="openCity(event, 'SB')">Skarfabakki</button>
-			<button class="tablinks" onclick="openCity(event, 'GT')">Grundatangi</button>
-		</div>
-		<div id="FFH" class="tabcontent">
-			<iframe class="faxa" src="https://www.faxafloahafnir.is" scrolling="no"></iframe>
-		</div>
-		<div id="MT" class="tabcontent">
-			<iframe class="marinetraffic" src="https://www.marinetraffic.com/en/ais/home/centerx:-21.853/centery:64.151/zoom:16" scrolling="no"></iframe>
-		</div>
-		<div id="KB" class="tabcontent">
-			<iframe class="cam" src="https://g0.ipcamlive.com/player/player.php?alias=korngardur&autoplay=true" allowfullscreen="allowfullscreen"></iframe>
-		</div>
-		<div id="SB" class="tabcontent">
-			<iframe class="cam" src="https://g0.ipcamlive.com/player/player.php?alias=skarfabakki" allowfullscreen="allowfullscreen"></iframe>
-		</div>
-		<div id="GT" class="tabcontent">
-			<iframe class="cam" src="https://g0.ipcamlive.com/player/player.php?alias=grundartangi" allowfullscreen="allowfullscreen"></iframe>
-		</div>
-	</body>
+        <div class="parent1">
+            <div class="div1">
+                <button class="btn" onclick="Reload1()">Reload</button>
+                <iframe id="sb" class="frame" frameborder="0" src="https://g0.ipcamlive.com/player/player.php?alias=skarfabakki" allowfullscreen="allowfullscreen"></iframe>
+            </div>
+            <div class="div2">
+                <button class="btn" onclick="Reload2()">Reload</button>
+                <iframe id="kg" class="frame" frameborder="0" src="https://g0.ipcamlive.com/player/player.php?alias=korngardur" allowfullscreen="allowfullscreen"></iframe>
+            </div>
+            <div class="div3">
+                <button class="btn" onclick="Reload3()">Reload</button>
+                <iframe id="mt" class="frame" frameborder="0" src="https://www.marinetraffic.com/en/ais/home/centerx:-21.853/centery:64.151/zoom:15" scrolling="no"></iframe>
+            </div>
+            <div class="div4">
+                <!--<button class="btn" onclick="Reload4()">Reload</button>-->
+                <iframe id="ffh" class="frame" frameborder="0" src="https://www.faxafloahafnir.is/#enShipTab1" scrolling="no"></iframe>
+            </div>
+        </div>
+    </body>
 </html>
