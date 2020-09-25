@@ -30,3 +30,18 @@ body {
     width: auto;
     height: auto;
 }
+.top {
+    position: absolute;
+}
+p {
+    color: white;
+    font-size: 2.5vh;
+    background-color: black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 5vw;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}

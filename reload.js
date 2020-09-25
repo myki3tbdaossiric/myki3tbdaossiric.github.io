@@ -11,17 +11,6 @@ function Reload3() {
     iframe.src = iframe.src;
 }
 function Reload4() {
-    //var url = document.getElementById("ffh").src;
-    
-    //setTimeout(SetSource("blank.html"), 2000);
-    //setTimeout(SetSource(url), 100);
-    
-    //var url = iframe.src;
-    //iframe.src = "blank.html";
-    //iframe.src = url;
-    
-    //parent.frames[ffh].window.location.reload();
-    //document.getElementById(ffh).contentDocument.location.reload(true);
-    //var asd = parent.frames.length;
-    //window.alert(asd);
+    var iframe = document.getElementById("ffh");
+    iframe.src = iframe.src;
 }
